@@ -1,0 +1,35 @@
+/* ===== GLOBAL VISUAL FOUNDATION ===== */
+    /* Dark luxury palette with gold accents and smooth rendering */
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        radial-gradient(circle at top, rgba(201, 162, 39, 0.18), transparent 28%),
+        linear-gradient(180deg, #0b0b0f 0%, #111118 50%, #07070a 100%);
+      color: #f5f1e8;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    /* ===== HERO VISUAL ACCENT ===== */
+    /* Subtle glow and image overlay effect for premium studio branding */
+    .hero-glow {
+      box-shadow: 0 0 0 1px rgba(201, 162, 39, 0.2), 0 30px 80px rgba(0,0,0,0.45);
+    }
+
+    /* ===== INTERACTIVE CARD HOVER ===== */
+    /* Gentle lift on cards for services and pricing */
+    .lift {
+      transition: transform .25s ease, border-color .25s ease, background-color .25s ease;
+    }
+    .lift:hover {
+      transform: translateY(-4px);
+      border-color: rgba(201, 162, 39, 0.45);
+      background-color: rgba(255,255,255,0.03);
+    }
+
+    /* ===== FOCUS STATES ===== */
+    /* Accessible focus rings for keyboard navigation */
+    :focus-visible {
+      outline: 2px solid #d7b35a;
+      outline-offset: 3px;
+    }
